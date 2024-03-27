@@ -9,6 +9,12 @@
 
 ![](README_files/1.jpg)
 
+正常运行结束后，会显示`[EXEC STDOUT]  [stdout empty]`
+
+![](README_files/2.jpg)
+
+> *不知道为什么微信截图糊了个糊，凑活看吧*
+
 ## 关于tsconfig.json
 
 ### 集成tsconfig到运行命令参数
