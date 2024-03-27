@@ -1,0 +1,115 @@
+{
+    "id": "noahyoung-hx-compile-typescript",
+    "name": "noahyoung-hx-compile-typescript",
+    "description": "编译typescript，支持使用不同版本的typescript",
+    "displayName": "编译typescript",
+    "version": "2.11.0",
+    "publisher": "Noah Young",
+    "engines": {
+        "HBuilderX": "^3.2.6"
+    },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "编译",
+        "typescript",
+		"tsc",
+		"ts",
+        "版本"
+    ],
+    "scripts": {
+        "build": "node build/build.js",
+        "build:update-typescript": "node build/update.js"
+    },
+    "activationEvents": [],
+    "external": {
+        "type": "node",
+        "programPath": "${pluginPath}",
+        "executable": "/bin/cli.js",
+        "commands": [
+            {
+                "id": "ts-compile-latest",
+                "name": "typescript@latest",
+                "command": [
+                    "node",
+                    "${programPath}",
+                    "-t",
+                    "2.9.2",
+                    "-f",
+                    "${file}",
+                    "-p",
+                    "${projectDir}"
+                ],
+                "extensions": "ts",
+                "key": "",
+                "showInParentMenu": false,
+                "onDidSaveExecution": false
+            },
+            {
+                "id": "ts-compile-4.9.5",
+                "name": "typescript@4.9.5",
+                "command": [
+                    "node",
+                    "${programPath}",
+                    "-t",
+                    "2.9.2",
+                    "-f",
+                    "${file}",
+                    "-p",
+                    "${projectDir}"
+                ],
+                "extensions": "ts",
+                "key": "",
+                "showInParentMenu": false,
+                "onDidSaveExecution": false
+            },
+            {
+                "id": "ts-compile-3.9.4",
+                "name": "typescript@3.9.4",
+                "command": [
+                    "node",
+                    "${programPath}",
+                    "-t",
+                    "2.9.2",
+                    "-f",
+                    "${file}",
+                    "-p",
+                    "${projectDir}"
+                ],
+                "extensions": "ts",
+                "key": "",
+                "showInParentMenu": false,
+                "onDidSaveExecution": false
+            },
+            {
+                "id": "ts-compile-2.9.2",
+                "name": "typescript@2.9.2",
+                "command": [
+                    "node",
+                    "${programPath}",
+                    "-t",
+                    "2.9.2",
+                    "-f",
+                    "${file}",
+                    "-p",
+                    "${projectDir}"
+                ],
+                "extensions": "ts",
+                "key": "",
+                "showInParentMenu": false,
+                "onDidSaveExecution": false
+            }
+        ]
+    },
+    "extensionDependencies": [
+        "plugin-manager"
+    ],
+    "dependencies": {
+        "commander": "^12.0.0",
+        "ts-2.9.2": "npm:typescript@^2.9.2",
+        "ts-3.9.4": "npm:typescript@^3.9.4",
+        "ts-4.9.5": "npm:typescript@^4.9.5",
+        "ts-latest": "npm:typescript@^5.4.3"
+    }
+}
