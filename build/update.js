@@ -1,6 +1,6 @@
 /** 更新ts文件依赖 */
 
-const { getVersionList } = require("./utils");
+const {getVersionList} = require("./utils");
 
 const versionList = getVersionList()
 const cmdList = versionList.map(({version}) => `ts-${version}@npm:typescript@${version}`)

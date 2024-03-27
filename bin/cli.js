@@ -10,7 +10,7 @@ program
     .version(`${require("../package.json").version}`)
 
 // 注册支持的命令及执行函数
-program 
+program
     .option("-t, --typescript [tsVersion]", "use specific typescript version")
     .option("-f, --file [filePath]", "file path")
     .option("-p, --project-dir [projectDir]", "project dir")

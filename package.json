@@ -14,8 +14,8 @@
     "keywords": [
         "编译",
         "typescript",
-		"tsc",
-		"ts",
+        "tsc",
+        "ts",
         "版本"
     ],
     "scripts": {

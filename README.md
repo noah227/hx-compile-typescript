@@ -1,6 +1,5 @@
 ﻿> 编译ts文件
 
-
 ## 使用方式
 
 ### 编译单个文件
@@ -25,11 +24,11 @@
 
 ```json
 {
-	"hxPluginConfig": {
-		"hx-compile-typescript": {
-			"integrateCompilerOptions": true
-		}
-	}
+    "hxPluginConfig": {
+        "hx-compile-typescript": {
+            "integrateCompilerOptions": true
+        }
+    }
 }
 ```
 
